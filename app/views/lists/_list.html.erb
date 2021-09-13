@@ -1,3 +1,11 @@
 <div class="col-6">
-  <%= link_to list.name, list_path(list) %>
+  <div class="card my-3">
+  
+    <%= link_to list_path(list) do %>
+      <%= image_tag "https://source.unsplash.com/200x200/?movie" %>
+      <%= list.name %>
+    <% end %>
+
+    <%= link_to "🗑", list_path(list), method: :delete %>
+  </div>
 </div>
