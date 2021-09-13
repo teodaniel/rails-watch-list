@@ -1,7 +1,17 @@
-<h1>Movies</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/random/movie);">
+  <div class="container text-center">
+    <h1>Movies</h1>
+    <p>help pls</p>
+    <%= link_to 'Create new list', new_list_path %>
+
+  </div>
+</div>
+
 <div class="container">
-  <ul>
-    <%= render @meal %>
-  </ul>
+  <div class="row">
+    <%= render @movies %>
+  </div>
+  <div class="row">
+    <%= render @lists %>
+  </div>
 </div>

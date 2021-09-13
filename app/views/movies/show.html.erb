@@ -1,2 +1,6 @@
-<h1>Movies#show</h1>
-<p>Find me in app/views/movies/show.html.erb</p>
+<div class="container">
+  <h1><%= @movie.title %></h1>
+  <img class="img-thumbnail" src="<%= @movie.poster_url %>" alt="movie poster image">
+  <p class="text-center"><%= @movie.overview %></p>
+</div>
+
